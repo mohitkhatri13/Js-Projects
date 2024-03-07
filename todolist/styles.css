@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg , rgb(202, 81, 81) , rgb(219, 177, 100));
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+     
+}
+.container{
+     min-height: auto;
+     width: 500px;
+     background-color: white;
+     border-radius: 10px;
+     position: absolute;
+     top: 20%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 0 0 100px 0px;
+}
+.title{
+     position: absolute;
+     top: 5%;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+     padding: 20px;
+    align-items: center;
+    gap: 20px;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+}
+
+.input-field{
+    height: 40px;
+    width: 90%;
+    border-radius: 30px;
+    border:none;
+    outline: none;
+    background-color:rgb(197, 200, 204) ;
+    text-align:left;
+    padding-left: 20px;
+    position: relative;
+}
+.btn{
+    height:40px ;
+    width: 18%;
+    border-radius: 30px;
+    background-color:rgb(253, 119, 119);
+    border:none;
+    outline: none;
+    position: absolute;
+    right: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: red;
+}
+.list{
+    margin: 20px;
+    position: relative;
+    padding-left: 40px;
+    
+}
+.list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.list ul li{
+    list-style: none;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+ .list ul li::before{
+    content:'';
+    height: 18px;
+    width: 18px;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+     left: 0;
+}
+.list ul li.checked::before{
+    content: '';
+    background-image: url(./images//checked.png);
+}
+.list ul li span{
+    position: absolute;
+    right: 0;
+    color: #555;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+}
+.list ul li span:hover{
+  background-color: rgb(197, 200, 204);
+}
+
